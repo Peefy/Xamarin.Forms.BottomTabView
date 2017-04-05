@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid
+    x:Class="DuGu.XFLib.Controls.TabView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:be="clr-namespace:DuGu.XFLib.Behaviors"
+    x:Name="totalGrid"
+    RowSpacing="0">
+
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="60" />
+    </Grid.RowDefinitions>
+
+    <Grid x:Name="viewGroup" Grid.Row="0" />
+    <Grid
+        x:Name="tabbarGrid"
+        Grid.Row="1"
+        BackgroundColor="White"
+        HorizontalOptions="Fill"
+        RowSpacing="0"
+        VerticalOptions="End">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="1" />
+            <RowDefinition Height="59" />
+
+        </Grid.RowDefinitions>
+
+        <BoxView
+            x:Name="boxView"
+            Grid.Row="0"
+            HeightRequest="1"
+            HorizontalOptions="Fill"
+            Color="#eff0dc" />
+        <Grid
+            x:Name="grid"
+            Grid.Row="1"
+            BackgroundColor="White"
+            HorizontalOptions="Fill">
+
+            <Grid.ColumnDefinitions>
+
+                <!--<ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />-->
+
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+    </Grid>
+
+</Grid>
