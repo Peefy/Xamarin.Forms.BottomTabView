@@ -19,6 +19,7 @@ namespace App2
             };
             tabView.AddChildrenViews(Childrens);
             tabView.SelectedChanged += tabView_SelectedChanged;
+
         }
 
         private void tabView_SelectedChanged(object sender, TabViewChangedEventArgs e)
@@ -33,6 +34,9 @@ namespace App2
             var view = e.View;
             view.BackgroundColor = color;
             Title = e.Index.ToString();
+            var app = Application.Current as App;
+            app.Navi.MiddleTitleText = e.Index.ToString();
+            app.Navi.MiddleTitleColor = color;
         }
     }
 }

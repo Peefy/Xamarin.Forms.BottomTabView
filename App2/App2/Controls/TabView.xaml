@@ -6,12 +6,10 @@
     xmlns:be="clr-namespace:DuGu.XFLib.Behaviors"
     x:Name="totalGrid"
     RowSpacing="0">
-
     <Grid.RowDefinitions>
         <RowDefinition />
         <RowDefinition Height="60" />
     </Grid.RowDefinitions>
-
     <Grid x:Name="viewGroup" Grid.Row="0" />
     <Grid
         x:Name="tabbarGrid"

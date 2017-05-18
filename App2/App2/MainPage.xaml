@@ -6,5 +6,4 @@
     xmlns:duguctrls="clr-namespace:DuGu.XFLib.Controls"
     xmlns:local="clr-namespace:App2">
     <duguctrls:TabView x:Name="tabView" />
-
 </ContentPage>
