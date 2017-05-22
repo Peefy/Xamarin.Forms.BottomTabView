@@ -100,13 +100,13 @@ namespace App2
 ```
 - TabView属性方法说明
 
-属性值/方法名/事件名|说明|补充|注意事项
----|---|---|---
-（属性）TabBarColor|设置TabView底部tab导航栏的背景颜色|无|无
-（属性）TabBarHeight|设置TabView底部tab导航栏的高度大小|无|无
-（属性）TabLineColor|设置TabView底部tab导航栏与导航View的分界线颜色|无|无
-（方法）AddChildrenViews|添加一个tab导航以及导航的view视图|无|无
-（事件）SelectedChanged|当底部tab导航点击选择发生变化时引起的事件|点击同一tab导航按钮不会触发|无
+属性值/方法名/事件名|说明
+---|---
+（属性）TabBarColor|设置TabView底部tab导航栏的背景颜色
+（属性）TabBarHeight|设置TabView底部tab导航栏的高度大小
+（属性）TabLineColor|设置TabView底部tab导航栏与导航View的分界线颜色
+（方法）AddChildrenViews|添加一个tab导航以及导航的view视图
+（事件）SelectedChanged|当底部tab导航点击选择发生变化时引起的事件,点击同一tab导航按钮不会触发
 
 ## NavigationPageEx
 - 使用样例
