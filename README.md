@@ -10,7 +10,11 @@ This is a BottomTabView with Xamarin.Forms,and now it has NavigationPageEx(Andro
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:duguctrls="clr-namespace:DuGu.XFLib.Controls"
     xmlns:local="clr-namespace:App2">
-    <duguctrls:TabView x:Name="tabView" />
+    <duguctrls:TabView
+        x:Name="tabView"
+        TabBarColor="White"
+        TabBarHeight="100"
+        TabLineColor="Navy" />
 </ContentPage>
 ```
 - 使用样例
@@ -86,6 +90,56 @@ namespace App2
             var app = AppHelper.CurrentApplication;
             app.NavigationEx.MiddleTitleText = e.Index.ToString();
             app.NavigationEx.MiddleTitleColor = color;
+        }
+    }
+}
+```
+- TabView属性方法说明
+属性值/方法名/事件名|说明
+---|---
+（属性）TabBarColor|设置TabView底部tab导航栏的背景颜色 
+（属性）TabBarHeight|设置TabView底部tab导航栏的高度大小 
+（属性）TabLineColor|设置TabView底部tab导航栏与导航View的分界线颜色
+（方法）AddChildrenViews|添加一个tab导航以及导航的view视图
+（事件）SelectedChanged|当底部tab导航点击选择发生变化时引起的事件(点击同一tab导航按钮不会触发)
+## NavigationPageEx
+- 使用样例
+```c#
+using App2.Controls.WithRenderer;
+
+using Xamarin.Forms;
+
+namespace App2
+{
+    public partial class App : Application
+    {
+
+        public NavigationPageEx NavigationEx => navigationPageEx;
+
+        private NavigationPageEx navigationPageEx; 
+
+        public App()
+        {
+            InitializeComponent();
+            navigationPageEx = new NavigationPageEx(new MainPage());
+            MainPage = navigationPageEx;
+            NavigationEx.MiddleTitleColor = Color.Black;
+
+        }
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+        }
+
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
+
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
         }
     }
 }
