@@ -95,25 +95,14 @@ namespace App2
 }
 ```
 - TabView属性方法说明
-属性值/方法名/事件名|说明
----|---
-（属性）TabBarColor|设置TabView底部tab导航栏的背景颜色 
-（属性）TabBarHeight|设置TabView底部tab导航栏的高度大小 
-（属性）TabLineColor|设置TabView底部tab导航栏与导航View的分界线颜色
-（方法）AddChildrenViews|添加一个tab导航以及导航的view视图
-（事件）SelectedChanged|当底部tab导航点击选择发生变化时引起的事件(点击同一tab导航按钮不会触发)
 
-xml布局属性|属性值|对应方法|说明
+属性值/方法名/事件名|说明|补充|注意事项
 ---|---|---|---
-cpbGravity|给定值及组合|setGravity(int gravity)|设置排版方式，当高宽超过绘制所需尺寸时，此属性定义其绘制位置
-cpbRadius|dimension|setRadius(float radius)|设置环形半径，其包括了绘制的进度的尺寸
-cpbStartAngle|integer|setStartAngle(int angle)|设置起始角度
-cpbSweepAngle|integer|setSweepAngle(int angle)|设置扫描角度
-cpbBackgroundSize|dimension|setBackgroundSize(float size)|设置背景尺寸
-cpbBackgroundColor|color|setBackgroundColor(int color)|设置背景颜色
-cpbProgressSize|dimension|setProgressSize(float size)|设置环形尺寸
-cpbMax|integer|setMax(int max)|设置最大值
-cpbProgress|integer|setProgress(int progress)|设置进度
+（属性）TabBarColor|设置TabView底部tab导航栏的背景颜色|无|无
+（属性）TabBarHeight|设置TabView底部tab导航栏的高度大小|无|无
+（属性）TabLineColor|设置TabView底部tab导航栏与导航View的分界线颜色|无|无
+（方法）AddChildrenViews|添加一个tab导航以及导航的view视图|无|无
+（事件）SelectedChanged|当底部tab导航点击选择发生变化时引起的事件|点击同一tab导航按钮不会触发|无
 
 ## NavigationPageEx
 - 使用样例
@@ -158,7 +147,8 @@ namespace App2
 }
 ```
 - NavigationPageEx属性方法说明
-属性值/方法名/事件名|说明
----|---
-（属性）MiddleTitleColor|设置toolbar中间文字的颜色
-（属性）MiddleTitleText|设置toolbar中间文字的内容
+
+属性值/方法名/事件名|说明|补充|注意事项
+---|---|---|---
+（属性）MiddleTitleColor|设置toolbar中间文字的颜色|无|无
+（属性）MiddleTitleText|设置toolbar中间文字的内容|无|无
