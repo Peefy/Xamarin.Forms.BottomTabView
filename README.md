@@ -2,7 +2,6 @@
 This is a BottomTabView with Xamarin.Forms,and now it has NavigationPageEx(Android) in it.
 
 ## 预览
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.BottomTabView/master/screenshots/tab1.png)
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.BottomTabView/master/screenshots/tab2.png)
 
 ## BottomTabView
