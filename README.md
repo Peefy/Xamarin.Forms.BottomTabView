@@ -2,8 +2,8 @@
 This is a BottomTabView with Xamarin.Forms,and now it has NavigationPageEx(Android) in it.
 
 ## 预览
-![Screenshots](https://raw.githubusercontent.com/AlexMofer/ProjectX/master/circleprogressbar/screenshots.gif)
-![Screenshots](https://raw.githubusercontent.com/AlexMofer/ProjectX/master/circleprogressbar/screenshot_2.gif)
+![Screenshots](https://github.com/Peefy/Xamarin.Forms.BottomTabView/tree/master/screenshots/tab1.png)
+![Screenshots](https://github.com/Peefy/Xamarin.Forms.BottomTabView/tree/master/screenshots/tab2.png)
 
 ## BottomTabView
 - 布局样例
