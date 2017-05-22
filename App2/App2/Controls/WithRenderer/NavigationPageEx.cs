@@ -33,6 +33,9 @@ namespace App2.Controls.WithRenderer
         {
            
         }
+        /// <summary>
+        /// (NavigationPageEx)设置toolbar中间文字的颜色
+        /// </summary>
         public Color MiddleTitleColor
         {
             get { return (Color)GetValue(MiddleTitleColorProperty); }
@@ -57,6 +60,9 @@ namespace App2.Controls.WithRenderer
         {
 
         }
+        /// <summary>
+        /// (NavigationPageEx)设置toolbar中间文字的内容
+        /// </summary>
         public string MiddleTitleText
         {
             get { return (string)GetValue(MiddleTitleTextProperty); }

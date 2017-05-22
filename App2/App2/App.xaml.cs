@@ -1,8 +1,4 @@
 ﻿using App2.Controls.WithRenderer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Xamarin.Forms;
 
@@ -11,14 +7,16 @@ namespace App2
     public partial class App : Application
     {
 
-        public NavigationPageEx Navi { get; set; } = new NavigationPageEx(new MainPage());
+        public NavigationPageEx NavigationEx => navigationPageEx;
+
+        private NavigationPageEx navigationPageEx; 
 
         public App()
         {
             InitializeComponent();
-
-            MainPage = Navi;
-            Navi.MiddleTitleColor = Color.Black;
+            navigationPageEx = new NavigationPageEx(new MainPage());
+            MainPage = navigationPageEx;
+            NavigationEx.MiddleTitleColor = Color.Black;
 
         }
 

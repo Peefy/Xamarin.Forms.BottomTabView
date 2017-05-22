@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
+﻿using Android.Views;
 using Android.Widget;
-
-
 using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android.AppCompat;
-
-using App2.Controls.WithRenderer;
-using App2.Droid.Renderers;
 using Xamarin.Forms.Platform.Android;
+using Xamarin.Forms.Platform.Android.AppCompat;
 using System.ComponentModel;
 using System.Reflection;
+using App2.Controls.WithRenderer;
+using App2.Droid.Renderers;
 
 [assembly: ExportRenderer(typeof(NavigationPageEx), typeof(NavigationPageExRenderer))]
 namespace App2.Droid.Renderers
@@ -54,19 +42,17 @@ namespace App2.Droid.Renderers
             {
                 string toolbarTitle = "TiTle";
                 var layoutPara = new Android.Support.V7.Widget.Toolbar.LayoutParams(
-                    LayoutParams.WrapContent, LayoutParams.WrapContent);
-                layoutPara.Gravity = 1;
+                    LayoutParams.WrapContent, LayoutParams.WrapContent,1);
                 initTextView = new TextView(Forms.Context)
                 {
                     LayoutParameters = layoutPara,
                     Gravity = GravityFlags.Center,
-                    Text = toolbarTitle ?? "",
+                    Text = toolbarTitle,
+                    TextSize = 20,
                 };
-                initTextView.SetTextColor(Android.Graphics.Color.White);
-                initTextView.TextSize = 20;               
+                initTextView.SetTextColor(Android.Graphics.Color.White);            
                 toolbar.AddView(initTextView);
                 toolbar.Title = "";
-
             }
         }
 

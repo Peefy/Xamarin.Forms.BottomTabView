@@ -3,6 +3,9 @@ using Xamarin.Forms;
 
 using DuGu.XFLib.Controls;
 
+using App2.Helpers;
+using App2.Views;
+
 namespace App2
 {
     public partial class MainPage : ContentPage
@@ -13,9 +16,39 @@ namespace App2
             InitializeComponent();
             Childrens = new List<TabViewChildren>()
             {
-                new TabViewChildren(){UnSelectImageSource = "" },
-                new TabViewChildren(){UnSelectImageSource = ""  },
-                new TabViewChildren(){UnSelectImageSource = ""  },
+                new TabViewChildren()
+                {
+                    UnSelectImageSource = "",
+                    SelectedImageSource = "icon.png",
+                    SelectedTextColor = Color.Red,
+                    ImageSize = new Size(25,25),
+                    TextFontSize = 18,
+                    Text = "主页",
+                    UnSelectTextColor = Color.Gray,
+                    View = new HomeView(),
+                },
+                new TabViewChildren()
+                {
+                    UnSelectImageSource = "",
+                    SelectedImageSource = "icon.png",
+                    SelectedTextColor = Color.Red,
+                    ImageSize = new Size(25,25),
+                    TextFontSize = 18,
+                    Text = "主页",
+                    UnSelectTextColor = Color.Gray,
+                    View = new HomeView(),
+                },
+                new TabViewChildren()
+                {
+                    UnSelectImageSource = "",
+                    SelectedImageSource = "icon.png",
+                    SelectedTextColor = Color.Red,
+                    ImageSize = new Size(25,25),
+                    TextFontSize = 18,
+                    Text = "主页",
+                    UnSelectTextColor = Color.Gray,
+                    View = new HomeView(),
+                },
             };
             tabView.AddChildrenViews(Childrens);
             tabView.SelectedChanged += tabView_SelectedChanged;
@@ -33,10 +66,9 @@ namespace App2
             }
             var view = e.View;
             view.BackgroundColor = color;
-            Title = e.Index.ToString();
-            var app = Application.Current as App;
-            app.Navi.MiddleTitleText = e.Index.ToString();
-            app.Navi.MiddleTitleColor = color;
+            var app = AppHelper.CurrentApplication;
+            app.NavigationEx.MiddleTitleText = e.Index.ToString();
+            app.NavigationEx.MiddleTitleColor = color;
         }
     }
 }
