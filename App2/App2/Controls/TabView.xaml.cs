@@ -302,36 +302,49 @@ namespace DuGu.XFLib.Controls
         Size imageSize = new Size(25,25);
         double textFontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
 
+        /// <summary>
+        /// Tab导航按钮选中时显示的View
+        /// </summary>
         public ContentView View
         {
             get { return view; }
             set { SetProperty(ref view, value); }
         }
-
+        /// <summary>
+        /// Tab导航按钮的文字
+        /// </summary>
         public string Text
         {
             get { return text; }
             set { SetProperty(ref text, value); }
         }
-
+        /// <summary>
+        /// Tab导航按钮选中时显示的图片
+        /// </summary>
         public string SelectedImageSource
         {
             get { return selectedImageSource; }
             set { SetProperty(ref selectedImageSource, value); }
         }
-
+        /// <summary>
+        /// Tab导航按钮未选中时显示的图片
+        /// </summary>
         public string UnSelectImageSource
         {
             get { return unSelectImageSource; }
             set { SetProperty(ref unSelectImageSource, value); }
         }
-
+        /// <summary>
+        /// Tab导航按钮选中时显示的文字颜色
+        /// </summary>
         public Color SelectedTextColor
         {
             get { return selectedTextColor; }
             set { SetProperty(ref selectedTextColor, value); }
         }
-
+        /// <summary>
+        /// Tab导航按钮未选中时显示的文字颜色
+        /// </summary>
         public Color UnSelectTextColor
         {
             get { return unSelectTextColor; }
